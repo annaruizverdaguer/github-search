@@ -1,0 +1,22 @@
+.container {
+  width: 600px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+img {
+  width: 150px;
+  margin: 20px;
+}
+.media {
+  text-align: center;
+}
+
+.no-results {
+  opacity: 50%;
+}
+
+p {
+  color: gray;
+}
