@@ -11,6 +11,10 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/cce3fc98a6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -25,14 +29,22 @@
           id="search-input"
           placeholder="Enter Github user"
           value=""
+          autocomplete="off"
         />
-        <button type="button" id="search-button" class="btn btn-info">
+        <button
+          type="submit"
+          id="search-button"
+          class="btn btn-info"
+          autofocus="on"
+        >
           🔍
         </button>
       </div>
       <hr />
 
       <div class="results-container"></div>
+      <div class="repos-container"></div>
+      <footer>Coded by: Anna Ruiz Verdaguer</footer>
     </div>
 
     <script src="src/app.js"></script>

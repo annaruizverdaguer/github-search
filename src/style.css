@@ -1,14 +1,23 @@
 .container {
   width: 600px;
   max-width: calc(100% - 20px);
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 20px auto;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 img {
-  width: 150px;
+  width: 100px;
   margin: 20px;
+  border-radius: 10px;
 }
+
+footer {
+  font-size: 10px;
+  color: gray;
+}
+
 .media {
   text-align: center;
 }
@@ -17,6 +26,44 @@ img {
   opacity: 50%;
 }
 
+h3 {
+  margin-bottom: 20px;
+}
+
 p {
   color: gray;
+}
+
+i {
+  margin: 5px;
+}
+
+.icon-container {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+}
+
+.repos-container {
+}
+
+.repo-container {
+}
+
+.repo-name {
+  margin-top: 20px;
+  display: inline-block;
+  width: 75%;
+}
+.user-info {
+  display: inline-block;
+  width: 65%;
+  align-items: center;
+}
+
+.user-avatar {
+  display: inline-flex;
+  width: 25%;
+  align-items: center;
+  margin-right: 10px;
 }
