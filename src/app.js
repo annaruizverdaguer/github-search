@@ -1,4 +1,12 @@
+function cleanSearch(type) {
+  let container = document.getElementsByClassName(`${type}-container`)[0];
+  container.innerHTML = ``;
+}
+
 function noResults(type) {
+  if (type == "results") {
+    cleanSearch("repos");
+  }
   let div = document.getElementsByClassName(`${type}-container`)[0];
   div.innerHTML = `
         <div class="media">
@@ -43,8 +51,8 @@ function printRepo(repo) {
 
 function printAllRepos(repos) {
   if (repos.length > 0) {
+    cleanSearch("repos");
     let reposDiv = document.getElementsByClassName("repos-container")[0];
-    reposDiv.innerHTML = ``;
     repos.forEach((repo) => {
       let repoDiv = printRepo(repo);
       reposDiv.appendChild(repoDiv);
@@ -55,8 +63,8 @@ function printAllRepos(repos) {
 }
 
 function printUserInfo(user) {
+  cleanSearch("results");
   let userDiv = document.getElementsByClassName("results-container")[0];
-  userDiv.innerHTML = ``;
 
   // avatar de l'usuari + nom de l'usuari + descripció de l'usuari bio
   let userBio = user.bio == null ? "This user does not have a bio." : user.bio;
